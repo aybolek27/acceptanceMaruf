@@ -1,0 +1,201 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "verify user name and last name",
+        "description": "",
+        "id": "login;verify-user-name-and-last-name",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I login using username \"nitoyey@dumoac.net\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nitoyey@dumoac.net\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 57
+                }
+              ],
+              "location": "LoginStepDefs.i_login_using_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "users full name \"Johny\" \"Smith\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Johny\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Smith\"",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginStepDefs.users_full_name_should_be_displayed(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@temp"
+          }
+        ]
+      }
+    ],
+    "name": "login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "src/test/resources/com/prestashop/features/login_page.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "HomePageStepDef.the_user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Default count and size information",
+        "description": "",
+        "id": "product-information;default-count-and-size-information",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the user selects Printed Summer Dress",
+            "match": {
+              "location": "ProductInformationStepDefs.the_user_selects_Printed_Summer_Dress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "correct default count size should be displayed",
+            "match": {
+              "location": "ProductInformationStepDefs.correct_default_count_size_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@temp"
+          }
+        ]
+      }
+    ],
+    "name": "Product information",
+    "description": "",
+    "id": "product-information",
+    "keyword": "Feature",
+    "uri": "src/test/resources/com/prestashop/features/product_information.feature",
+    "tags": []
+  }
+]
